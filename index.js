@@ -26,10 +26,22 @@ getString("Banana");
 // TASK3
 // Implement a program that determines if a triangle with given side lengths is a valid triangle, meaning the sum of the lengths of any two sides must be greater than the length of the third side.
 
-// ARRAY DESTRUCTIRING,Spread Operator,Rest Operator
+// ARRAY DESTRUCTIRING,Spread Operator,Rest Operator'
+//TASK4
 // Swap Values: Write a function that takes in two variables and swaps their values using array destructuring.
-function getValues(a, b) {
-  [a, b] = [b, a];
-  console.log(a, b);
-}
-getValues(4, 10);
+// function getValues(a, b) {
+//   [a, b] = [b, a];
+//   console.log(a, b);
+// }
+// getValues(4, 10);
+
+// TASK5
+// Sum Array Elements: Write a function that takes an array of numbers and returns the sum using array destructuring and the spread operator.
+// let sum = 0;
+// function getNumbers(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum;
+// }
+// console.log(getNumbers([1, 2, 3]));
