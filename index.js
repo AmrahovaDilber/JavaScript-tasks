@@ -22,3 +22,14 @@ function getString(str) {
 }
 getString("Porsche");
 getString("Banana");
+
+// TASK3
+// Implement a program that determines if a triangle with given side lengths is a valid triangle, meaning the sum of the lengths of any two sides must be greater than the length of the third side.
+
+// ARRAY DESTRUCTIRING,Spread Operator,Rest Operator
+// Swap Values: Write a function that takes in two variables and swaps their values using array destructuring.
+function getValues(a, b) {
+  [a, b] = [b, a];
+  console.log(a, b);
+}
+getValues(4, 10);
