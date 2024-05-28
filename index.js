@@ -1,5 +1,4 @@
-//!!!!!!!!!!!!!!! LOGICAL OPERATORS!!!!!!!!!!
-// TASK1
+// TASK
 // Create a function that checks if a given number is between 10 and 20 (inclusive) using logical operators.
 // function getNumber(number) {
 //   if (number > 10 && number <= 20) {
@@ -11,7 +10,7 @@
 // getNumber(15);
 // getNumber(30);
 
-//TASK2
+//Task
 //Implement a function that checks if a given string contains both the letter 'a' and the letter 'b'.
 // function getString(str) {
 //   if (str.toLowerCase().includes("a" && "b")) {
@@ -23,11 +22,9 @@
 // getString("Porsche");
 // getString("Banana");
 
-// TASK3
-// Implement a program that determines if a triangle with given side lengths is a valid triangle, meaning the sum of the lengths of any two sides must be greater than the length of the third side.
 
 // ARRAY DESTRUCTIRING,Spread Operator,Rest Operator'
-//TASK4
+//TASK
 // Swap Values: Write a function that takes in two variables and swaps their values using array destructuring.
 // function getValues(a, b) {
 //   [a, b] = [b, a];
@@ -47,31 +44,7 @@
 // console.log(getNumbers([1, 2, 3]));
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!FOR AND WHILE LOOPS!!!!!!!!!!!!!!!!!!!!!!
-
-// Factorial: Write a function that calculates the factorial of a given number using a loop.
-//TASK6
-// let hasil = 1;
-// function calcFactorial(number) {
-//   for (let i = 1; i <= number; i++) {
-//     hasil *= i;
-//   }
-//   return hasil;
-// }
-
-// console.log(calcFactorial(5));
-
-// TASK7
-// Sum of Array Elements: Write a function that takes an array of numbers and returns the sum of all the numbers using a loop.
-// let sum = 0;
-// function calcSum(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     sum += arr[i];
-//   }
-//   return sum;
-// }
-// console.log(calcSum([1, 2, 3, 4, 5]));
-
-//TASK8
+//TASK
 // Reverse Array: Write a function that reverses the elements of an array using a loop.
 // function getReverse(arr) {
 //   const reversedArr = [];
@@ -83,20 +56,7 @@
 
 // console.log(getReverse([1, 2, 3]));
 
-//TASK9
-//Find Maximum Number: Write a function that finds the maximum number in an array using a loop.
-// const calcMax = (arr) => {
-//   let max = arr[0];
-//   for (let i = 0; i < arr.length; i++) {
-//     if (max < arr[i]) {
-//       max = arr[i];
-//     }
-//   }
-//   return max;
-// };
-// console.log(calcMax([1, 2, 3, 4]));
-
-//  Task11
+//  Task
 // Write a function to find the average of all numbers in an array.
 // const calcAverage = (arr) => {
 //   let sum = 0;
@@ -109,8 +69,8 @@
 
 // console.log(calcAverage([1, 2, 3, 4])); // Output: 2.5
 
-// STRINGS
-// TASK1
+
+
 // String Reversal: Write a function that takes a string as input and returns a new string with the characters reversed.
 // function getString(str) {
 //   const reversedString = [];
@@ -123,14 +83,16 @@
 // }
 // getString("Porsche");
 
-// TASK2
+
+// TASK
 // String Length: Write a function that takes a string as input and returns the length of the string.
 // function calcLength(str) {
 //   return str.length;
 // }
 // console.log(calcLength("Porsche"));
 
-//TASK3
+
+//TASK
 // String Palindrome: Write a function that takes a string as input and returns true if the string is a palindrome, false otherwise.
 // const isPalindrome = (str) => {
 //   const reversedArr = [];
@@ -149,16 +111,13 @@
 // isPalindrome("Porsche");
 // isPalindrome("radar");
 
-// TASK4 String Capitalization: Write a function that takes a string as input and returns a new string with the first letter of each word capitalized.
-// const getString = (str) => {
-//   for (let i = 0; i < str.length; i++) {}
-// };
 
 //TASK Create an array of integers with the values 1 to 10. Print each element of the array.
 // let arr = [1, 23, 4, 5, 6, 7];
 // for (let i = 0; i < arr.length; i++){
 //   console.log(arr[i])
 // }
+
 
 //TASK Array Manipulation:
 // Write a function that takes an array and returns a new array with each element squared.
@@ -167,6 +126,7 @@
 // }
 
 // console.log(calcSquared([1,2,3,4,5]))
+
 
 //TASK Write a function to find the sum of all elements in an array of integers.
 // function calcSum(arr) {
@@ -178,6 +138,7 @@
 // }
 
 // console.log(calcSum([1, 2, 3, 4]));
+
 
 //TASK Sum of Elements:
 // Write a function to find the sum of all elements in an array of integers.
@@ -244,49 +205,27 @@
 
 // }
 
-//TASK  Write a function that takes a string and returns it reversed.
-// function getString(str) {
-//   let my_arr = [];
-//   const new_str = str.split("");
-//   for (let i = new_str.length - 1; i >= 0; i--) {
-//     my_arr.push(new_str[i]);
+
+
+//Bir arraydaki en boyuk ve en kicik ededi tapin
+// function findMinMax(arr) {
+//   if (arr.length === 0) {
+//     return { min: null, max: null };
 //   }
-//   const reversersedArr = my_arr.join("");
-//   console.log(reversersedArr);
-// }
-// getString("porsche");
-
-
-
-//TASK Check if the string is Palindrome or not
-// function isPalindrome(str) {
-//     const reversedStr = str.split("").reverse().join("");
-//     console.log(reversedStr);
-//     if (str === reversedStr) {
-//       console.log("Yes, string is a palindrome");
-//     } else {
-//       console.log("No, string is not a palindrome");
+//   let minElement = arr[0];
+//   let maxElement = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < minElement) {
+//       minElement = arr[i];
+//     }
+//     if (arr[i] > maxElement) {
+//       maxElement = arr[i];
 //     }
 //   }
 
-//   isPalindrome("racecar");
-
-
-
-//TASK Write a function that finds the largest number in an array.
-// const my_arr=[12,3,4,5,30,34]
-// function calcLargest(arr) {
-//     let max_eded=arr[0]
-//     for (let i = 0; i < my_arr.length; i++){
-//         if (max_eded < arr[i]) {
-//             max_eded=arr[i]
-//         }
-//     }
-//     return max_eded
+//   return { min: minElement, max: maxElement };
 // }
-// console.log(calcLargest(my_arr))
-
-
+// console.log(findMinMax([1, 2, 3, 4, 5]))
 
 
 //TASK Anagram Check:
@@ -310,8 +249,6 @@
 // console.log(isAnagram("Dilber", "Porsche"));
 
 
-
-
 //TASK
 // Merge Sorted Arrays:
 // Write a function that merges two sorted arrays into a single sorted array.
@@ -321,24 +258,24 @@
 //     j = 0;
 //   let mergedArray = [];
 
-  // Traverse both arrays and merge them in sorted order
-  // while (i < arr1.length && j < arr2.length) {
-  //   if (arr1[i] < arr2[j]) {
-  //     mergedArray.push(arr1[i]);
-  //     i++;
-  //   } else {
-  //     mergedArray.push(arr2[j]);
-  //     j++;
-  //   }
-  // }
+// Traverse both arrays and merge them in sorted order
+// while (i < arr1.length && j < arr2.length) {
+//   if (arr1[i] < arr2[j]) {
+//     mergedArray.push(arr1[i]);
+//     i++;
+//   } else {
+//     mergedArray.push(arr2[j]);
+//     j++;
+//   }
+// }
 
-  // If there are remaining elements in arr1, add them to the merged array
-  // while (i < arr1.length) {
-  //   mergedArray.push(arr1[i]);
-  //   i++;
-  // }
+// If there are remaining elements in arr1, add them to the merged array
+// while (i < arr1.length) {
+//   mergedArray.push(arr1[i]);
+//   i++;
+// }
 
-  // If there are remaining elements in arr2, add them to the merged array
+// If there are remaining elements in arr2, add them to the merged array
 //   while (j < arr2.length) {
 //     mergedArray.push(arr2[j]);
 //     j++;
@@ -350,10 +287,6 @@
 // const arr2 = [2, 4, 6];
 // const merged = mergeSortedArrays(arr1, arr2);
 // console.log(merged);
-
-
-
-
 
 //TASK  Increase the numbers 5 with the help of for loop in arr
 // const my_arr = [12, 3, 4, 5, 19];
@@ -375,9 +308,7 @@
 //     let capitalizedStr = new_str.join("");
 //     return capitalizedStr;
 // }
-
 // console.log(isCapitalize(my_str));
-
 // TASK
 // let arr=[0,1,2,3,4,5,7,8,9]
 // for (let i = 0; i < 9; i++){
@@ -393,7 +324,6 @@
 //     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
 //     .join(" ");
 // }
-
 // let cumle = "verilen cumlede butun sozlerin bas herfini boyudun";
 // let sonuc = capitalizeFirstLetters(cumle);
 // console.log(sonuc);
@@ -410,7 +340,6 @@
 //   }
 // }
 // console.log(calcFactorial(5))
-
 
 //EDEDIN SADE OLUB OLMADIGINI TAPAN KOD YAZ
 // function isPrimary(n) {
@@ -441,7 +370,6 @@
 //   }
 //   return true;
 // }
-
 // function firstPrimary(n) {
 //   let nextNum = n + 1
 //   while (!isPrimary(nextNum)) {
@@ -450,6 +378,7 @@
 //   return nextNum;
 // }
 // console.log(firstPrimary(8))
+
 
 
 //TASK  If there is an element ending with 9 in the given array, return true, if not, return false
@@ -475,7 +404,219 @@
 // const array2 = [2, 3, 4];
 // const intersection = arrayIntersection(array1, array2);
 
-// console.log(intersection); 
+// console.log(intersection);
 
 
+//Verilmis arrayda tekrar olmayan butun elementleri qeyd etmek
+// function calcUnique(arr){
+//   let uniqueArr=[];
+//   for(let i=0;i<arr.length;i++){
+//     if(!uniqueArr.includes(arr[i])){
+//       uniqueArr.push(arr[i])
+//     }
+//   }
+//   return uniqueArr
+// }
+// console.log(calcUnique([1,2,3,4,5,5,5,6,7,8,8,8]))
+
+
+//Task UCBUCAGIN NOVUNU TEYIN ET
+// function checkTriangle(a, b, c) {
+//   if (a + b > c && a + c > b && b + c > a) {
+//     console.log("Ucbucaq movcuddur");
+
+//     if (a === b && a === c) {
+//       console.log("Ucbucaq berabertereflidir");
+//     } else if (a == b || a == c || b == c) {
+//       console.log("Ucbucaq beraberyanlidir");
+//     } else {
+//       console.log("Ucbucaq muxteliftereflidir");
+//     }
+//   } else {
+//     console.log("Ucbuaq yoxdur");
+//   }
+// }
+
+
+//TASK DUZBUCAQLI UCBUCAQ OLUB OLMADIGINI YOXLA
+// function isRightTriangle(a, b, c) {
+//     if (a + b <= c || a + c <= b || b + c <= a) {
+//         console.log('Ucbucaq movcud deyil');
+//         return;
+//     }
+//     const sides = [a, b, c].sort((x, y) => x - y);
+//     const [x, y, z] = sides;
+
+//     if (z * z === x * x + y * y) {
+//         console.log("Ucbucaq duzbucaqlidir")
+//     } else {
+//         console.log("ucbucaq duznucaqli deyil")
+//     }
+// }
+// console.log(isRightTriangle(3,4,5))
+// console.log(isRightTriangle(6,8,10))
+// console.log(isRightTriangle(7,4,5))
+
+
+
+
+
+//TASK Massivdə Təkrarlanan Elementləri Tapmaq
+// Verilmiş bir massivdə təkrarlanan elementləri tapan bir funksiya yazın.
+// function findDuplicates(arr) {
+//     const seen = new Set();
+//     const duplicates = new Set();
+//     for (const num of arr) {
+//         if (seen.has(num)) {
+//             duplicates.add(num);
+//         } else {
+//             seen.add(num);
+//         }
+//     }
+//     return Array.from(duplicates);
+// }
+// console.log(findDuplicates([1, 2, 3, 4, 5, 3, 2, 6])); // [3, 2]
+// console.log(findDuplicates([7, 8, 9, 7, 9, 10])); //
+
+
+
+
+// Userden 5 eded alin alinan ededlerden sade ve 10 dan boyuk ededleri bir liste elave edib ekranda gosterin
+// const numbers = [];
+// for (let i = 0; i < 5; i++) {
+//     let number = parseInt(prompt(`Eded daxil edin ${i + 1}:`));
+//     while (isNaN(number)) {
+//         number = parseInt(prompt(`Duzgun eded daxil edin ${i + 1}:`));
+//     }
+//     numbers.push(number);
+// }
+// const filteredNumbers = numbers.filter(num => {
+//     if (num <= 1) return false; // 1 sadə deyil
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) return false; // Sadə deyil
+//     }
+//     return num > 10;
+// });
+// if (filteredNumbers.length > 0) {
+//     console.log("Sade və 10-dan böyük ededlər:");
+//     filteredNumbers.forEach(num => console.log(num));
+// } else {
+//     console.log("Sade və 10-dan böyük eded yoxdur.");
+// }
+
+
+
+//TASKV Verilmiş bir massivdən cüt ədədləri seçmək və onların kvadratlarını bir listə daxil etmək
+// function isCalc(arr) {
+//     let new_arr=[]
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] % 2 === 0) {
+//             new_arr.push(arr[i]*arr[i])
+//         }
+//     }
+//     return new_arr
+// }
+// console.log(isCalc([2,3,4,5]))
+
+//TASK Verilmiş bir massivdən tək ədədləri seçib onların kvadratlarının cəmini hesablamaq
+// function calcSquares(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] % 2 != 0) {
+//             sum=sum+(arr[i]*arr[i])
+//         }
+//     }
+//     return sum;
+// }
+// console.log(calcSquares([1,2,3,4,5]))
+
+//TASK Verilmiş bir massivdən ən böyük və ən kiçik ədədləri tapmaq və onların fərqini hesablamaq
+// const numbers = [1, 2, 3, 4, 5]
+// function calcDifference(arr) {
+//     let difference;
+//     let min_eded = arr[0];
+//     let max_eded = arr[0];
+//     for (let i = 0; i < arr.length; i++){
+//         if (min_eded > arr[i]) {
+//             min_eded=arr[i]
+//         } else if (max_eded < arr[i]) {
+//             max_eded=arr[i]
+//         }
+//     }
+//     difference = max_eded - min_eded;
+//     return difference
+// }
+// console.log(calcDifference(numbers))
+
+
+//TASK
+// Verilmiş bir metindəki hər bir hərfə görünüş sayını hesablamaq və hər bir hərfi ekrana çap etmək
+// const text = "programming";
+// const charCount = {};
+// for (const char of text) {
+//     if (charCount[char]) {
+//         charCount[char]++;
+//     } else {
+//         charCount[char] = 1;
+//     }
+// }
+// console.log("Hər bir hərf və onların görünüş sayıları:");
+// for (const char in charCount) {
+//     console.log(`${char}: ${charCount[char]}`);
+// }
+
+//TASK
+// Verilmiş bir metindəki ən uzun sözü tapmaq və onun uzunluğunu və özünü ekrana çap etmək
+// Verilmiş metin
+// const text = "JavaScript ilə proqramlaşdırma hər zaman maraqlıdır";
+// const words = text.split(" ");
+// let longestWord = "";
+// for (const word of words) {
+//     if (word.length > longestWord.length) {
+//         longestWord = word;
+//     }
+
+// console.log(`Ən uzun söz: "${longestWord}" (Uzunluq: ${longestWord.length})`);
+
+//EBOBU TAPAN KOD YAZ;
+// function findEbob(a, b) {
+//   let ebob;
+//   if (a > b) {
+//     ebob = b;
+//   } else {
+//     ebob = a;
+//   }
+//   while (a % ebob !== 0 || b % ebob !== 0) {
+//     ebob--;
+//     }
+//     return ebob
+// }
+// console.log(findEbob(25,10))
+
+
+
+//EKOBU TAPAN KOD YAZ
+// function findEkob(a, b) {
+//     let ekob;
+//     if (a > b) {
+//         ekob = a;
+//     } else {
+//         ekob = b;
+//     }
+//     while (ekob % a != 0 || ekob % b != 0) {
+//         ekob++
+//     }
+//     return ekob;
+// }
+// console.log(findEkob(12, 5))
+// console.log(findEkob(34,2))
+
+
+
+
+
+//TASK
+// Verilmiş bir metindəki hər bir sözün tərsinə çevirmək və nəticəni ekrana çap etmək
+
+//tASK Verilmiş bir metndəki bütün hərfləri böyük hərfə çevirmək və nəticəni ekrana çap etmək
 
